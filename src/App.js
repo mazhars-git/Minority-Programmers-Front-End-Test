@@ -6,15 +6,21 @@ import {
   Link
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from "./components/Home/Home/Home";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+// <FontAwesomeIcon icon={faCoffee} />
 
 function App() {
   return (
-    <div>
-      <FontAwesomeIcon icon={faCoffee} />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+            <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
