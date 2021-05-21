@@ -108,20 +108,20 @@ const Events = () => {
         <section>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3 text-white">
+                    <div className="col-md-3 p-2 text-white">
                         <h2>Upcoming Startup</h2>
                         <p>These visionary companies and disruptors are on their journey to change the world.</p>
                     </div>
                     
                         {
-                            eventsInfo.map(info => <div className="col-md-3 pb-3">
+                            eventsInfo.map(info => <div className="col-md-3 pb-3 p-2">
                             <EventDetails info={info} key={info.id}></EventDetails>
                             </div>
                             )
                         }
                     
                 </div>
-                <div className="py-5 text-center">
+                <div className="py-3 text-center">
                     <button className="btn btn-success">Learn More</button>
                 </div>
             </div>
