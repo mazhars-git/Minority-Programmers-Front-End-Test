@@ -1,8 +1,44 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import cardLogo from '../../../images/Frame 313.png';
 import FeatureContent from '../FeatureContent/FeatureContent';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
+import SwiperCore, { Pagination, Navigation } from "swiper/core";
+  
+// install Swiper modules
+SwiperCore.use([Pagination,Navigation]);
+  
 const Features = () => {
+    const swiperRef = useRef(null);
+
+    let appendNumber = 4;
+    let prependNumber = 1;
+  
+    const prepend2 = () => {
+      swiperRef.current.swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+      ]);
+    }
+  
+    const prepend = () => {
+      swiperRef.current.swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    }
+  
+    const append = () => {
+      swiperRef.current.swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+    }
+  
+    const append2 = () => {
+      swiperRef.current.swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+      ]);
+    }
+
     const featuresInfo =[
         {
             img: cardLogo,
@@ -11,7 +47,7 @@ const Features = () => {
             fundTitle: 'Fund rise',
             percentage: '50%',
             amount: '200,000/400,000',
-            key: '001'
+            id: 1001
         },
         {
             img: cardLogo,
@@ -20,7 +56,7 @@ const Features = () => {
             fundTitle: 'Fund rise',
             percentage: '50%',
             amount: '200,000/400,000',
-            key: '002'
+            id: 1002
         },
         {
             img: cardLogo,
@@ -29,7 +65,7 @@ const Features = () => {
             fundTitle: 'Fund rise',
             percentage: '50%',
             amount: '200,000/400,000',
-            key: '003'
+            id: 1003
         },
         {
             img: cardLogo,
@@ -38,32 +74,49 @@ const Features = () => {
             fundTitle: 'Fund rise',
             percentage: '50%',
             amount: '200,000/400,000',
-            key: '004'
-        },
+            id: 1004
+        }
     ]
+    
     return (
-        <div>
+        <section>
             <div className="container">
-                <div className="row">
+                <div className="row py-5">
                     <div className="col-md-2">
                         <h2>Featured Startups</h2>
                         <p>Invest in the next billion dollar company today</p>
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-md-10 align-self-center">
                         <div className="row">
-                            {
-                                featuresInfo.map(info => 
-                                <FeatureContent 
-                                info={info} 
-                                key={info.key}
-                                >
-                                </FeatureContent>)
-                            }
+                            <Swiper 
+                                ref={swiperRef} 
+                                slidesPerView={3} 
+                                centeredSlides={true} 
+                                spaceBetween={30} 
+                                pagination={{
+                                    "type": "fraction"
+                                    }} 
+                                navigation={true} 
+                                className="mySwiper">
+                                  
+                                    { 
+                                    featuresInfo.map(info => 
+                                        <SwiperSlide>
+                                            <FeatureContent 
+                                                info={info} 
+                                                key={info.id}
+                                            >
+                                            </FeatureContent>
+                                        </SwiperSlide>
+                                        )
+                                    }
+                            </Swiper>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+                
+        </section>
     );
 };
 

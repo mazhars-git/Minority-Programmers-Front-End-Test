@@ -1,10 +1,12 @@
 import React from 'react';
 
 const FeatureContent = (props) => {
-    const {heading, } = props.info;
+    const {heading, details } = props.info;
     return (
-        <div className="col-md-4">
+        <div>
             <h3>{heading}</h3>
+            <p>{details}</p>
+            <button className="btn btn-primary">Learn More</button>
         </div>
     );
 };
