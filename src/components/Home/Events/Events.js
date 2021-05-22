@@ -9,8 +9,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 301
         },
         {
@@ -18,8 +18,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 302
         },
         {
@@ -27,8 +27,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 303
         },
         {
@@ -36,8 +36,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 304
         },
         {
@@ -45,8 +45,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 305
         },
         {
@@ -54,8 +54,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 306
         },
         {
@@ -63,8 +63,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 307
         },
         {
@@ -72,8 +72,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 308
         },
         {
@@ -81,8 +81,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 309
         },
         {
@@ -90,8 +90,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 310
         },
         {
@@ -99,8 +99,8 @@ const Events = () => {
             heading: 'Mangoswap',
             details: 'The mango swap coin is the future for crypto currency, it will allow user share and tansact over defi networks with less fees.',
             fundTitle: 'Fund rise',
-            percentage: '50%',
-            amount: '200,000/400,000',
+            percentage: 50,
+            amount: '$200,000/$400,000',
             id: 311
         }
     ]
@@ -121,8 +121,8 @@ const Events = () => {
                         }
                     
                 </div>
-                <div className="py-3 text-center">
-                    <button className="btn btn-success">Learn More</button>
+                <div className="py-5 text-center">
+                    <button className="btn btn-brand_2">Load more</button>
                 </div>
             </div>
         </section>

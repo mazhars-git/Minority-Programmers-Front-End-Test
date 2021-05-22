@@ -8,8 +8,8 @@ const HeaderContent = () => {
                 <div className="row">
                     <div className="col-md-6"></div>
                     <div className="col-md-6 pt-5 mt-5">
-                        <h2 className="text-white">Invest directly into <br /> minority innovations.</h2>
-                        <button className="btn btn-primary">View Startups</button>
+                        <h1 className="text-white py-3">Invest directly into <br /> minority innovations.</h1>
+                        <button className="btn btn-brand_3">View Startups</button>
                     </div>
                 </div>
             </div>

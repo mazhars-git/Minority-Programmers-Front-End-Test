@@ -3,3 +3,54 @@
     border-radius: 10px;
     padding: 15px;
 }
+#card-progressBar{
+    border-radius: 30px;
+}
+
+.progress-bar{
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%) !important;
+}
+.btn-brand, .btn-custom, .btn-brand_2{
+    border-radius: 2px;
+    padding: 10px 10px;
+    font-weight: 700;
+}
+.btn-brand{
+    background-color: #141471;
+    color: #fff;
+}
+.btn-brand:hover{
+    background: #fff;
+    color: #141471;
+    border: 1px solid #141471;
+}
+.btn-custom{
+    background-color: #fff;
+    border: 1px solid #141471;
+    color: #141471;
+}
+.btn-custom:hover{
+    background: #141471;
+    color: #fff;
+}
+.btn-brand_2{
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: -49px;
+}
+.btn-brand_2:hover{
+    color: #141471;
+}
+
+
+.swiper-pagination{
+    bottom: -20px;
+}
+
+.btn-brand_3{
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+}

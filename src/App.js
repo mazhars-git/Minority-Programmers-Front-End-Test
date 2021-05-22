@@ -8,10 +8,7 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/Home/Home/Home";
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-// <FontAwesomeIcon icon={faCoffee} />
+import CardDashboard from "./components/CardDashboard/CardDashboard/CardDashboard";
 
 function App() {
   return (
@@ -22,6 +19,9 @@ function App() {
         </Route>
         <Route exact path="/">
             <Home />
+        </Route>
+        <Route path="/cardDashboard/:id">
+            <CardDashboard />
         </Route>
       </Switch>
     </Router>

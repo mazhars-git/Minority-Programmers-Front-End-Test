@@ -13,12 +13,12 @@ const Startup = () => {
         },
         {
             img: startupBg_2,
-            button: 'Advice a Startup',
+            button: 'Join Minority Ventures Cohort',
             id: 202
         },
         {
             img: startupBg_3,
-            button: 'Advice a Startup',
+            button: 'Help <Code/>',
             id: 203
         }
     ]

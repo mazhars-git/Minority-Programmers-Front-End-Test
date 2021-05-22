@@ -7,7 +7,7 @@ const StartupContent = ({info}) => {
             <div className="startup-img-box">
                 <img className="img-fluid" src={info.img} alt="" />
                 <div className="startup-button">
-                    <button>{info.button}</button>
+                    <button className="btn btn-brand_2">{info.button}</button>
                 </div>
             </div>
         </div>

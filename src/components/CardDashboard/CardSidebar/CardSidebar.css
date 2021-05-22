@@ -1,0 +1,12 @@
+
+.card-sidebar{
+    background: #fff;
+}
+.card-sidebar ul{
+    margin: 0;
+    padding: 0;
+}
+.card-sidebar ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
